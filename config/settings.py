@@ -449,18 +449,6 @@ MESSAGE_TAGS = {
     messages.ERROR: "danger",  # 'error' by default
 }
 
-# sorl thumbnail
-
-THUMBNAIL_QUALITY = 70
-
-THUMBNAIL_ENGINE = "sorl.thumbnail.engines.convert_engine.Engine"
-
-THUMBNAIL_CONVERT = "gm convert"
-
-THUMBNAIL_IDENTIFY = "gm identify"
-
-THUMBNAIL_PRESERVE_FORMAT = True
-
 # Captcha
 
 HCAPTCHA_SECRET_KEY = env.str("HCAPTCHA_SECRET_KEY")

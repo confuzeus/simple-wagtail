@@ -3,7 +3,6 @@ python-slugify>=4.0.1,<5.0  # https://github.com/un33k/python-slugify
 Pillow>=8.2.0,<9.0  # https://github.com/python-pillow/Pillow
 argon2-cffi>=20.1.0,<21.0  # https://github.com/hynek/argon2_cffi
 whitenoise[brotli]>=5.2.0,<6.0  # https://github.com/evansd/whitenoise
-sorl-thumbnail>=12.7.0,<13.0 # https://pypi.org/project/sorl-thumbnail/
 Faker>=9.8.0 # https://pypi.org/project/Faker/
 pymemcache>=3.5.1,<4.0 # https://pypi.org/project/pymemcache/
 
