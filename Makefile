@@ -32,11 +32,16 @@ fixtures:
 	python manage.py init_site
 
 fmt:
-	black .
-	isort .
+	@black --exclude __pycache__  config
+	@black --exclude __pycache__ --exclude migrations simple_wagtail
+	@isort --skip migrations --skip __pycache__ simple_wagtail
+	@isort --skip __pycache__ config
+	@djhtml -i templates/**/*.html
+	@npx prettier --write staticSrc/js
 
 lint:
-	flake8
+	@flake8 config
+	@flake8 simple_wagtail
 
 fmtl: fmt lint
 
