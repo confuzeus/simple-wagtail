@@ -1,4 +1,4 @@
-# Simple Django Project Template
+# Simple Wagtail Project Template
 
 This template contains everything you need to bootstrap a new Django project.
 
@@ -34,7 +34,7 @@ cp appconfig.example.env appconfig.env
 Edit the file and change all the variables to your liking.
 
 You should also rename the project now unless you really
-like the name *Simple Django*.
+like the name *Simple Wagtail*.
 
 To rename, simply execute the script named `rename.py`.
 

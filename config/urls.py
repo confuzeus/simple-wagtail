@@ -5,7 +5,7 @@ from django.urls import include, path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
 
-from simple_django.core import views as core_views
+from simple_wagtail.core import views as core_views
 
 urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),

@@ -1,6 +1,6 @@
 {
-  "simple_django/*/models.py": { "type": "models" },
-  "simple_django/*/views.py": { "type": "views" },
-  "simple_django/*/admin.py": { "type": "admin" },
-  "simple_django/*/urls.py": { "type": "urls" }
+  "simple_wagtail/*/models.py": { "type": "models" },
+  "simple_wagtail/*/views.py": { "type": "views" },
+  "simple_wagtail/*/admin.py": { "type": "admin" },
+  "simple_wagtail/*/urls.py": { "type": "urls" }
 }

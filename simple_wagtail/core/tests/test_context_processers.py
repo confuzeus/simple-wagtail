@@ -1,6 +1,6 @@
 from django.test import RequestFactory, SimpleTestCase
 
-from simple_django.core.context_processors import site_data
+from simple_wagtail.core.context_processors import site_data
 
 
 class ContextProcessorsTests(SimpleTestCase):

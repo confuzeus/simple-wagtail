@@ -3,9 +3,9 @@ import collections.abc
 from django.core.paginator import Paginator
 from django.test import RequestFactory, SimpleTestCase
 
-from simple_django.core.templatetags import pagination_tags
-from simple_django.core.templatetags.url_tags import active_url, get_qs
-from simple_django.core.templatetags.useful_filters import is_number, is_string
+from simple_wagtail.core.templatetags import pagination_tags
+from simple_wagtail.core.templatetags.url_tags import active_url, get_qs
+from simple_wagtail.core.templatetags.useful_filters import is_number, is_string
 
 
 class TemplateTagsTests(SimpleTestCase):

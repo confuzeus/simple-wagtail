@@ -22,7 +22,7 @@ services:
     environment:
       POSTGRES_USER: debug
       POSTGRES_PASSWORD: debug
-      POSTGRES_DB: simple_django
+      POSTGRES_DB: simple_wagtail
 
   mailhog:
     image: mailhog/mailhog

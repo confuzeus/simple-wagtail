@@ -21,7 +21,7 @@ DEBUG = env.bool("DJANGO_DEBUG", False)
 
 TEST = env.bool("DJANGO_TEST", False)
 
-PROJECT_NAME = "Simple Django"
+PROJECT_NAME = "Simple Wagtail"
 
 DOMAIN_NAME = "example.com"
 
@@ -107,8 +107,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "simple_django.core",
-    "simple_django.accounts",
+    "simple_wagtail.core",
+    "simple_wagtail.accounts",
 ]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -251,7 +251,7 @@ TEMPLATES = [
 THIRD_PARTY_CONTEXT_PROCESSORS = []
 
 OWN_CONTEXT_PROCESSORS = [
-    "simple_django.core.context_processors.site_data",
+    "simple_wagtail.core.context_processors.site_data",
 ]
 
 TEMPLATES[0]["OPTIONS"]["context_processors"] += (
@@ -316,12 +316,12 @@ if not DEBUG:
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/3.2/ref/settings/#email-backend
 DEFAULT_FROM_EMAIL = env.str(
-    "DJANGO_DEFAULT_FROM_EMAIL", "Simple Django <admin@example.com>"
+    "DJANGO_DEFAULT_FROM_EMAIL", "Simple Wagtail <michael@confuzeus.com>"
 )
 
 SERVER_EMAIL = env.str("DJANGO_SERVER_EMAIL", DEFAULT_FROM_EMAIL)
 
-EMAIL_SUBJECT_PREFIX = env.str("DJANGO_EMAIL_SUBJECT_PREFIX", "[Simple Django]")
+EMAIL_SUBJECT_PREFIX = env.str("DJANGO_EMAIL_SUBJECT_PREFIX", "[Simple Wagtail]")
 
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
@@ -350,7 +350,7 @@ EMAIL_TIMEOUT = 5
 ADMIN_URL = env.str("DJANGO_ADMIN_URL")
 
 # https://docs.djangoproject.com/en/3.2/ref/settings/#admins
-ADMINS = [("""Josh Michael Karamuth""", "admin@example.com")]
+ADMINS = [("""Josh Michael Karamuth""", "michael@confuzeus.com")]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#managers
 MANAGERS = ADMINS
 
