@@ -456,6 +456,14 @@ THUMBNAIL_IDENTIFY = "gm identify"
 
 THUMBNAIL_PRESERVE_FORMAT = True
 
+# Captcha
+
+HCAPTCHA_SECRET_KEY = env.str("HCAPTCHA_SECRET_KEY")
+
+HCAPTCHA_SITE_KEY = env.str("HCAPTCHA_SITE_KEY")
+
 # Wagtail
 
 WAGTAIL_SITE_NAME = "Simple Wagtail"
+
+WAGTAILADMIN_USER_LOGIN_FORM = 'simple_wagtail.accounts.forms.LoginForm'

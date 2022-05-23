@@ -1,0 +1,14 @@
+{% extends "wagtailadmin/login.html" %}
+
+{% load allcaptcha_tags %}
+
+{% block above_login %}
+{{ form.media.js }}
+{% endblock %}
+
+{% block submit_buttons %}
+{% render_challenge %}
+<div style="margin-bottom: 1rem;"></div>
+{{ block.super }}
+{% endblock %}
+
