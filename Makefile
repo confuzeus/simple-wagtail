@@ -38,7 +38,7 @@ fmt:
 lint:
 	flake8
 
-lfmt: fmt lint
+fmtl: fmt lint
 
 services:
 	docker-compose up -d
