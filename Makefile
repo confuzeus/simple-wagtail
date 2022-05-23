@@ -52,7 +52,7 @@ stop-services:
 	docker-compose down
 
 serve-django:
-	python manage.py runserver_plus
+	python manage.py runserver_plus --keep-meta-shutdown
 
 serve-worker:
 	python manage.py qcluster
