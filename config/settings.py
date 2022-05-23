@@ -99,6 +99,19 @@ DJANGO_APPS = [
     "django.forms",
 ]
 THIRD_PARTY_APPS = [
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
+    'wagtail.embeds',
+    'wagtail.sites',
+    'wagtail.users',
+    'wagtail.snippets',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.search',
+    'wagtail.admin',
+    'wagtail',
+    'modelcluster',
+    'taggit',
     "django_extensions",
     "crispy_forms",
     "crispy_bootstrap5",
@@ -178,6 +191,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 if DEBUG or TEST:
@@ -441,3 +455,7 @@ THUMBNAIL_CONVERT = "gm convert"
 THUMBNAIL_IDENTIFY = "gm identify"
 
 THUMBNAIL_PRESERVE_FORMAT = True
+
+# Wagtail
+
+WAGTAIL_SITE_NAME = "Simple Wagtail"
