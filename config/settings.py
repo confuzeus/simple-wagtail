@@ -466,4 +466,4 @@ HCAPTCHA_SITE_KEY = env.str("HCAPTCHA_SITE_KEY")
 
 WAGTAIL_SITE_NAME = "Simple Wagtail"
 
-WAGTAILADMIN_USER_LOGIN_FORM = 'simple_wagtail.accounts.forms.LoginForm'
+WAGTAILADMIN_USER_LOGIN_FORM = "simple_wagtail.accounts.forms.LoginForm"

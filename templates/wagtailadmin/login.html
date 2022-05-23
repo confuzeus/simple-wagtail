@@ -3,12 +3,12 @@
 {% load allcaptcha_tags %}
 
 {% block above_login %}
-{{ form.media.js }}
+    {{ form.media.js }}
 {% endblock %}
 
 {% block submit_buttons %}
-{% render_challenge %}
-<div style="margin-bottom: 1rem;"></div>
-{{ block.super }}
+    {% render_challenge %}
+    <div style="margin-bottom: 1rem;"></div>
+    {{ block.super }}
 {% endblock %}
 
