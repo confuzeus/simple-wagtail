@@ -188,6 +188,10 @@ django-allcaptcha==0.3.0 \
     --hash=sha256:15a987a2bef6790e2a8356e1774515116854c045e4033b48174b4d0ab8c871ca \
     --hash=sha256:91596b722f507f06c2eabfcf4970d9141aa6c321ff01189522edec48e960280e
     # via -r requirements/base.in
+django-cogwheels==0.3 \
+    --hash=sha256:197bd05e7114403d7301214b3f8a371c4fb6039cf21c811f099438b167b5ed21 \
+    --hash=sha256:848a4d9f2c96c582a4a4f2e7c276dfd95ab3905748cae13bb7c4b365a6717e94
+    # via wagtailmenus
 django-crispy-forms==1.14.0 \
     --hash=sha256:35887b8851a931374dd697207a8f56c57a9c5cb9dbf0b9fa54314da5666cea5b \
     --hash=sha256:bc4d2037f6de602d39c0bc452ac3029d1f5d65e88458872cc4dbc01c3a400604
@@ -373,6 +377,10 @@ urllib3==1.26.9 \
 wagtail==3.0 \
     --hash=sha256:4a844d2d1cf5cbc9c48344c6ae9cc5c9f0d1134cd45cd2c484afdedc1164043a \
     --hash=sha256:d54d0742c5cebf92b021c04a6ac93312b8cb5f55e7c10f37199938033bda905d
+    # via -r requirements/base.in
+wagtailmenus==3.0.2 \
+    --hash=sha256:518b8e74fddcae91115313085673b72fdfc17aa4f711f0ea00dbdffa20abce33 \
+    --hash=sha256:77c2e098decc8882f8fbf4fbab6c04911a0daf744aabbfb7e4952f03e3533386
     # via -r requirements/base.in
 webencodings==0.5.1 \
     --hash=sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78 \
