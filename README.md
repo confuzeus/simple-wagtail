@@ -3,6 +3,12 @@
 Launch high quality [Wagtail](https://wagtail.io) based websites
 quickly with this project template.
 
+## Features
+
+- Docker for external services like database, cache, email, etc.
+- Custom Boostrap SCSS compilcation
+- Configured with environment variables
+
 ## Quick start
 
 Clone the project and clean up git.
@@ -18,12 +24,6 @@ Create and activate a virtual environment:
 ```shell
 virtualenv venv
 source venv/bin/activate
-```
-
-Install `pip-tools`:
-
-```shell
-pip install pip-tools
 ```
 
 Copy the example app config file:
