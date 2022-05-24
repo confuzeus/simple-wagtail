@@ -110,7 +110,6 @@ THIRD_PARTY_APPS = [
     "wagtail.search",
     "wagtail.admin",
     "wagtail.contrib.modeladmin",
-    "wagtailmenus",
     "wagtail",
     "modelcluster",
     "taggit",
@@ -259,7 +258,6 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "wagtail.contrib.settings.context_processors.settings",
-                "wagtailmenus.context_processors.wagtailmenus",
             ],
 
             "debug": DEBUG or TEST,
