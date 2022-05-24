@@ -1,14 +1,17 @@
-.PHONY: init pipcompile pipsync coverage reset fixtures fmt lfmt services \
+.PHONY: init preflight pipcompile pipsync coverage reset fixtures fmt lfmt services \
 	stop-services serve-django serve-worker shell migrate
 
 SHELL := /bin/bash
 
-init: pipcompile pipsync services
+init: preflight pipcompile pipsync services
 	npm install
 	npm run build
 	python manage.py collectstatic --no-input
 	python manage.py test
 	python manage.py migrate
+
+preflight:
+	pip install pip-tools docker-compose
 
 pipcompile:
 	pip-compile --upgrade --generate-hashes --output-file requirements/base.txt requirements/base.in
