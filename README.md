@@ -1,6 +1,7 @@
 # Simple Wagtail Project Template
 
-This template contains everything you need to bootstrap a new Django project.
+Launch high quality [Wagtail](https://wagtail.io) based websites
+quickly with this project template.
 
 ## Quick start
 
